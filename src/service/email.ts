@@ -22,13 +22,7 @@ export class EmailService {
 			html: emailOptions.html,
 		};
 
-		return transporter.sendMail(mailOptions, (error, info) => {
-			if (error) {
-				console.error("Error sending email: ", error);
-			} else {
-				console.log("Email sent: ", info.response);
-			}
-		});
+		await transporter.sendMail(mailOptions);
 	}
 }
 
