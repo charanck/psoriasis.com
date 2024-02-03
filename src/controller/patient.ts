@@ -25,9 +25,7 @@ export class PatientController {
 		await this.patientServie.sendPatientEnquiryAsEmail(enquiryData);
 
 		return CustomResponse.successResponse(
-			{
-				message: "enquiry sent via email successfully",
-			},
+			null,
 			201
 		);
 	}
