@@ -2,25 +2,18 @@ import { CustomResponse } from "../../src/util/custom-response.ts";
 import { config as sys_config } from "../../src/config/config.ts";
 import { EmailService } from "../../src/service/email.ts";
 import ejs from "ejs";
+import { ProcessPatientEnquiryRequestDto } from "../../src/controller/patient.ts";
 
 export default async (request: Request) => {
 	if (request.method !== "POST") {
 		return CustomResponse.badRequestResponse("request method not allowed");
 	}
-	const requestBody: TProcessPatientRequestBody = await request.json();
-	// Validation for the requestbody
-	if(!requestBody.firstName || (String(requestBody.firstName)) === "") {
-		return CustomResponse.badRequestResponse("firstname is required")
-	}
-	if(!requestBody.lastName || (String(requestBody.lastName)) === "") {
-		return CustomResponse.badRequestResponse("lastname is required")
-	}
-	if(!requestBody.number || Number.isNaN(requestBody.number)) {
-		return CustomResponse.badRequestResponse("phone number is required")
-	}
-	if(!requestBody.enquiry || (String(requestBody.enquiry)) === "") {
-		return CustomResponse.badRequestResponse("enquiry is required")
-	}
+	const requestBody: any = await request.json();
+	const processPatientEnquiryRequestDto: ProcessPatientEnquiryRequestDto = new ProcessPatientEnquiryRequestDto();
+	processPatientEnquiryRequestDto.firstName = requestBody?.firstName;
+	processPatientEnquiryRequestDto.lastName = requestBody?.lastName;
+	processPatientEnquiryRequestDto.enquiry = requestBody?.enquiry;
+	processPatientEnquiryRequestDto.number = requestBody?.number;
 	// Email ejs template string
 	const file = `
 	<!doctype html>
@@ -78,11 +71,5 @@ export default async (request: Request) => {
 	});
 	return CustomResponse.successResponse(requestBody, 201);
 };
-export const config = { path: "/patient-response" };
+export const config = { path: "/patient-response-edge" };
 
-interface TProcessPatientRequestBody {
-	firstName: string;
-	lastName: string;
-	number: number;
-	enquiry: string;
-}
