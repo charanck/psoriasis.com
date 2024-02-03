@@ -21,7 +21,7 @@ export class CustomResponse {
 			{
 				status: status ? status : 200,
 				headers: {
-					"content-type": "application/json",
+					"Content-Type": "application/json",
 				},
 			}
 		);
