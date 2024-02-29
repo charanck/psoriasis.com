@@ -609,7 +609,7 @@
 				redirect: "follow"
 			};
 
-			fetch("https://starlit-sprite-8a4200.netlify.app/patient-response", requestOptions)
+			fetch("/patient-response", requestOptions)
 				.then((response) => response.text())
 				.then((result) => console.log(result))
 				.catch((error) => console.error(error));
