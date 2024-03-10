@@ -630,7 +630,7 @@
 		window.onscroll = function () {
 			console.log(window.scrollY)
 			console.log(window.innerHeight)
-			if (window.scrollY < window.innerHeight) {
+			if (window.scrollY < window.innerHeight / 2) {
 				document.querySelector(".fa-angle-down").style.display = "block";
 			}else{
 				document.querySelector(".fa-angle-down").style.display = "none";
