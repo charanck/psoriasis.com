@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-	<title>Psoriasis Care</title>
+	<title>Psoriasis Doctor</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -26,9 +26,48 @@
 	<link rel="stylesheet" href="./css/flaticon.css">
 	<link rel="stylesheet" href="./css/icomoon.css">
 	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+<style>
+	.fa-phone {
+		position: fixed;
+		bottom: 20px;
+		right: 20px;
+		background-color: #4CAF50;
+		color: white;
+		border: none;
+		border-radius: 50%;
+		padding: 20px;
+		font-size: 16px;
+		cursor: pointer;
+		box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+		z-index: 99999;
+	}
+
+	.fa-angle-down {
+		position: fixed;
+		bottom: 10%;
+		right: 45%;
+		background-color: #4CAF50;
+		color: white;
+		border: none;
+		border-radius: 50%;
+		padding: 20px;
+		font-size: 16px;
+		cursor: pointer;
+		box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+		z-index: 99999;
+	}
+</style>
 
 <body>
+	<a href="#appointment-form" class="floating-button">
+		<i class="fa fa-phone" style="font-size:36px"></i>
+	</a>
+
+	<a href="#Specialities">
+		<i class="fa fa-angle-down" style="font-size:36px"></i>
+	</a>
 	<nav class="navbar py-4 navbar-expand-lg ftco_navbar navbar-light bg-light flex-row">
 		<div class="container">
 			<div class="row no-gutters d-flex align-items-start align-items-center px-3 px-md-0">
@@ -102,7 +141,7 @@
 		</div>
 	</section>
 
-	<section class="ftco-services ftco-no-pb">
+	<section id="Specialities" class="ftco-services ftco-no-pb">
 		<div class="container">
 			<div class="row no-gutters">
 				<div class="col-md-3 d-flex services align-self-stretch p-4 ftco-animate">
@@ -112,12 +151,20 @@
 						</div>
 						<div class="media-body p-2 mt-3">
 							<h3 class="heading">Specialities</h3>
-							<p>We are proud to offer expert care from highly qualified doctors with over 5 years of
-								specialized experience in treating psoriasis. Our team of dedicated professionals is
-								committed to providing personalized treatment plans tailored to each individual's unique
-								needs. With a deep understanding of the complexities of psoriasis and a passion for
-								delivering exceptional care, our doctors are here to support you on your journey to
-								healthier skin.</p>
+							<ul>
+								<strong>Experienced Doctors: </strong>
+								<li>Our doctors have over 5 years of specialized experience in treating psoriasis.</li>
+								<strong>Personalized Care: </strong>
+								<li>We create customized treatment plans tailored to your unique needs.</li>
+								<strong>Expertise in Psoriasis: </strong>
+								<li>Our team deeply understands psoriasis and can address its complexities effectively.
+								</li>
+								<strong>Passionate Support: </strong>
+								<li>We're dedicated to providing exceptional care and guiding you towards healthier
+									skin. </li>
+								<strong>Journey Together: </strong>
+								<li>We're here to support you every step of the way towards better skin health. </li>
+							</ul>
 						</div>
 					</div>
 				</div>
@@ -127,11 +174,17 @@
 							<span class="flaticon-ambulance"></span>
 						</div>
 						<div class="media-body p-2 mt-3">
-							<h3 class="heading">Emergency Care</h3>
-							<p>Emergency Care for Patients with Severe Itching and Mental Instability due to Psoriasis:
-								Enter your information below, and within 5 minutes, we'll provide you with the proper
-								guidance and solutions to alleviate your symptoms and provide relief. Our dedicated team
-								is here to support you around the clock.</p>
+							<h3 class="heading">Psoriasis: A Global Concern </h3>
+							<ul>
+								<li>WHO Comments Highlight Treatment Challenges: No complete cure available;
+									insufficient treatment options and access to care.</li>
+								<li>Diagnosis Delayed: 44% of Patients Visit General Physicians First </li>
+								<li>GBD 2019 records 46,22,594 new cases worldwide. </li>
+								<li>Affects 2-3% of the global population with varying prevalence and cultural
+									perceptions. </li>
+								<li>Annual US cost estimated at $112 billion in 2013. </li>
+								<li>Challenges: Genetic predisposition, Economic burden, Psychological impact </li>
+							</ul>
 						</div>
 					</div>
 				</div>
@@ -141,10 +194,15 @@
 							<span class="flaticon-stethoscope"></span>
 						</div>
 						<div class="media-body p-2 mt-3">
-							<h3 class="heading">Outdoor Checkup</h3>
-							<p>Experience our comprehensive outdoor checkup services at our centers in Bangalore,
-								Chennai, and Pondicherry, tailored to ensure the well-being and convenience of all
-								patients.</p>
+							<h3 class="heading">Emergency Care</h3>
+							<ul>
+								<strong>Psoriasis Care: </strong>
+								<li>Enter your information below. </li>
+								<li>Within 5 minutes, receive proper guidance and solutions. </li>
+								<li>Alleviate symptoms and find relief. </li>
+								<strong>Dedicated Team Support: </strong>
+								<li>Available around the clock to assist you. </li>
+							</ul>
 						</div>
 					</div>
 				</div>
@@ -189,9 +247,6 @@
 
 							<a class="nav-link ftco-animate" id="v-pills-4-tab" data-toggle="pill" href="#v-pills-4"
 								role="tab" aria-controls="v-pills-4" aria-selected="false">DETOX</a>
-
-							<a class="nav-link ftco-animate" id="v-pills-5-tab" data-toggle="pill" href="#v-pills-5"
-								role="tab" aria-controls="v-pills-5" aria-selected="false">SNANA CHOORNA</a>
 
 						</div>
 					</div>
@@ -271,40 +326,58 @@
 									</div>
 								</div>
 							</div>
-							<div class="tab-pane fade" id="v-pills-5" role="tabpanel"
-								aria-labelledby="v-pills-day-5-tab">
-								<div class="row departments">
-									<div class="col-lg-4 order-lg-last d-flex align-items-stretch">
-										<div class="img d-flex align-self-stretch"
-											style="background-image: url(./images/dept-4.jpeg);background-size:cover;">
-										</div>
-									</div>
-									<div class="col-md-8">
-										<h2>SNANA CHOORNA - coming soon</h2>
-										<p>At psoriasis-doctor.com, we proudly offer Snana Choorna, a specially
-											formulated product designed to protect sensitive skin from exposure to harsh
-											chemicals commonly found in soaps, providing a gentle and effective solution
-											for individuals with skin sensitivities. </p>
-										<p>At psoriasis-doctor.com, we proudly offer a range of medicines aimed at
-											enhancing the quality of life for our patients. Leading our list is Snana
-											Choorna, a natural alternative to chemically-based psoriasis soaps, designed
-											to provide relief and promote skin health.</p>
-										<p>Snana Choorna, composed of a blend of powdered herbs, serves as an effective
-											remedy to alleviate psoriasis symptoms and shield the skin from harmful
-											microbes, ensuring holistic relief and protection</p>
-										<h3>Steps: </h3>
-										<ul>
-											<li>Step 1: In one bucket of water, add 1 spoonful of Snana Choorna powder
-												and ensure thorough mixing.</li>
-											<li>Step 2: Use the prepared water solution to cleanse your body by gently
-												rubbing it with your hands, avoiding the use of any external objects on
-												sensitized skin.</li>
-											<li>Step 3: After rinsing with the medicinal water, take another bucket of
-												normal water and rinse your body thoroughly.</li>
-										</ul>
-										<h3>Product will launch soon</h3>
-									</div>
-								</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="ftco-section ftco-no-pt">
+		<div class="container">
+			<div class="row justify-content-center mb-5 pb-2">
+				<div class="col-md-8 text-center heading-section ftco-animate">
+					<h2 class="mb-4">Guru Pranam</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6 col-lg-4 ftco-animate">
+					<div class="staff">
+						<div class="text pt-3 text-center">
+							<h3>Dr. G. Sivaraman B.S.M.S., Ph.D., </h3>
+							<span class="position mb-2">Tamilnadu, Chennai</span>
+							<div class="faded">
+								<p>Dr. Sivaraman is a highly accomplished individual with significant expertise in
+									Siddha medicine and research. Under his guidance, I have learned various effective
+									treatment methods, including the utilization of specialized diets and innovative
+									systems for patient care. </p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-4 ftco-animate">
+					<div class="staff">
+						<div class="text pt-3 text-center">
+							<h3>Dr.Brahmadathan Namboothiri,</h3>
+							<span class="position mb-2">Kerala, Thrissur</span>
+							<div class="faded">
+								<p>Dr. Brahmadathan Namboothiri specializes in teaching Ayurveda principles from
+									Ashtangahirdayam, a popular text in Kerala. According to Agada tanthram, everything
+									under the sun has poisonous aspects. His expertise influences his opinions on
+									related research. </p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-4 ftco-animate">
+					<div class="staff">
+						<div class="text pt-3 text-center">
+							<h3>Dr. Mahesh P. Savalagimath, MD (Ayu) </h3>
+							<span class="position mb-2">Karnataka, Belgaum</span>
+							<div class="faded">
+								<p>Dr. Mahesh P. Savalagimath is a renowned Agada practitioner with over 15 years of
+									expertise in Ayurvedic skin management. His unique specialization in applying Agada
+									principles to skin care sets him apart in the field of Ayurveda. </p>
 							</div>
 						</div>
 					</div>
@@ -317,7 +390,7 @@
 		<div class="container">
 			<div class="row justify-content-center mb-5 pb-2">
 				<div class="col-md-8 text-center heading-section ftco-animate">
-					<h2 class="mb-4">About Me</h2>
+					<h2 class="mb-4">Sara of this guru is Dr. Mohamed muzzammel</h2>
 					<p>
 						Dr. Mohamed Muzzammel, BAMS, MD(Ayu), is a dedicated practitioner who embarked on his Ayurvedic
 						journey at Rajiv Gandhi Ayurveda Medical College in Mahe, Pondicherry. Following his
@@ -336,69 +409,6 @@
 						incurability of the disease fueled his commitment to providing specialized care for those
 						battling psoriasis. Dr. Muzzammel's journey is a testament to his unwavering dedication to
 						improving the lives of individuals struggling with skin ailments. </p>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section class="ftco-section ftco-no-pt">
-		<div class="container">
-			<div class="row justify-content-center mb-5 pb-2">
-				<div class="col-md-8 text-center heading-section ftco-animate">
-					<span class="subheading">Doctors</span>
-					<h2 class="mb-4">Our Qualified Doctors</h2>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-6 col-lg-4 ftco-animate">
-					<div class="staff">
-						<div class="img-wrap d-flex align-items-stretch">
-							<div class="img align-self-stretch" style="background-image: url(images/doc-1.jpg);"></div>
-						</div>
-						<div class="text pt-3 text-center">
-							<h3>Dr. G. Sivaraman B.S.M.S., Ph.D., </h3>
-							<span class="position mb-2">Tamilnadu, Chennai</span>
-							<div class="faded">
-								<p>Dr. Sivaraman is a highly accomplished individual with significant expertise in
-									Siddha medicine and research. Under his guidance, I have learned various effective
-									treatment methods, including the utilization of specialized diets and innovative
-									systems for patient care. </p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-4 ftco-animate">
-					<div class="staff">
-						<div class="img-wrap d-flex align-items-stretch">
-							<div class="img align-self-stretch" style="background-image: url(images/doc-2.jpeg);"></div>
-						</div>
-						<div class="text pt-3 text-center">
-							<h3>Dr.Brahmadathan Namboothiri,</h3>
-							<span class="position mb-2">Kerala, Thrissur</span>
-							<div class="faded">
-								<p>Dr. Brahmadathan Namboothiri specializes in teaching Ayurveda principles from
-									Ashtangahirdayam, a popular text in Kerala. According to Agada tanthram, everything
-									under the sun has poisonous aspects. His expertise influences his opinions on
-									related research. </p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-4 ftco-animate">
-					<div class="staff">
-						<div class="img-wrap d-flex align-items-stretch">
-							<div class="img align-self-stretch" style="background-image: url(images/doc-3.jpeg);"></div>
-						</div>
-						<div class="text pt-3 text-center">
-							<h3>Dr. Mahesh P. Savalagimath, MD (Ayu) </h3>
-							<span class="position mb-2">Karnataka, Belgaum</span>
-							<div class="faded">
-								<p>Dr. Mahesh P. Savalagimath is a renowned Agada practitioner with over 15 years of
-									expertise in Ayurvedic skin management. His unique specialization in applying Agada
-									principles to skin care sets him apart in the field of Ayurveda. </p>
-							</div>
-						</div>
-					</div>
 				</div>
 			</div>
 		</div>
@@ -483,7 +493,7 @@
 					<div class="heading-section heading-section-white ftco-animate mb-5">
 						<h2 class="mb-4">Consultation</h2>
 					</div>
-					<form class="appointment-form ftco-animate" onsubmit="">
+					<form id="appointment-form" class="appointment-form ftco-animate" onsubmit="">
 						<div class="d-md-flex">
 							<div class="form-group">
 								<input type="text" id="firstname" class="form-control" required
@@ -524,7 +534,7 @@
 						<div class="col-md-6 d-flex justify-content-center counter-wrap ftco-animate">
 							<div class="block-18 p-5 bg-light">
 								<div class="text">
-									<strong class="number" data-number="500">500+</strong>
+									<strong class="number" data-number="2500">500+</strong>
 									<span>Happy Patients</span>
 								</div>
 							</div>
@@ -591,7 +601,7 @@
 			const lastName = document.querySelector("#lastname").value;
 			const message = document.querySelector("#message").value;
 			const number = document.querySelector("#number").value;
-			
+
 			const myHeaders = new Headers();
 			myHeaders.append("Content-Type", "application/json");
 
@@ -614,7 +624,18 @@
 				.then((result) => console.log(result))
 				.catch((error) => console.error(error));
 		})
-
+		document.querySelector(".fa-angle-down").addEventListener("click", () => {
+			document.querySelector(".fa-angle-down").style.display = "none";
+		});
+		window.onscroll = function () {
+			console.log(window.scrollY)
+			console.log(window.innerHeight)
+			if (window.scrollY < window.innerHeight) {
+				document.querySelector(".fa-angle-down").style.display = "block";
+			}else{
+				document.querySelector(".fa-angle-down").style.display = "none";
+			}
+		};
 	</script>
 
 </body>
