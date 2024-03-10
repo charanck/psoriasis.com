@@ -8295,7 +8295,7 @@ h1, h2, h3, h4, h5,
     height: 600px;
     z-index: 0; }
     .owl-carousel.home-slider .slider-item {
-      background-size: cover;
+      background-size: contain;
       background-repeat: no-repeat;
       background-position: top center;
       height: 600px;
@@ -8303,7 +8303,7 @@ h1, h2, h3, h4, h5,
       z-index: 0; }
       @media (max-width: 1199.98px) {
         .owl-carousel.home-slider .slider-item {
-          background-position: center center !important; } }
+          background-position: top center !important; } }
       .owl-carousel.home-slider .slider-item .overlay {
         position: absolute;
         top: 0;
