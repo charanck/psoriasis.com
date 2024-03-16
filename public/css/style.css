@@ -8692,11 +8692,14 @@ h1, h2, h3, h4, h5,
   -ms-transition: all 0.3s ease;
   transition: all 0.3s ease; }
   .staff .img-wrap {
-    height: 700px; }
+    height: 500px;
+  }
   .staff .img {
     width: 100%;
     display: block;
     background-position: top center;
+    background-size: contain;
+background-repeat: no-repeat;
     -moz-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     -webkit-transition: all 0.3s ease;

@@ -58,9 +58,20 @@
 		box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
 		z-index: 99999;
 	}
+	 .alert{
+		position: fixed;
+		top: 10%;
+		left:calc(50% - 144px);
+		z-index: 99999;
+		border-radius: 50%;
+		box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+	 }
 </style>
 
 <body>
+	<div class="alert alert-primary" role="alert">
+		Enquiry submitted successfully
+	  </div>
 	<a href="#appointment-form" class="floating-button">
 		<i class="fa fa-phone" style="font-size:36px"></i>
 	</a>
@@ -70,21 +81,21 @@
 	</a>
 	<nav class="navbar py-4 navbar-expand-lg ftco_navbar navbar-light bg-light flex-row">
 		<div class="container">
-			<div class="row no-gutters d-flex align-items-start align-items-center px-3 px-md-0">
-				<div class="col-lg-4 pr-4 align-items-center">
+			<div class="row no-gutters d-flex align-items-center justify-content-center w-100  px-3 px-md-0">
+				<div class="col-lg-4 pr-4">
 					<a class="navbar-brand" href="">Psoriasis-<span>Doctor</span></a>
 				</div>
 				<div class="col-lg-8 d-none d-md-block">
-					<div class="row d-flex">
-						<div class="col-lg-8 d-flex topper align-items-center">
+					<div class="row d-flex justify-content-end">
+						<div class="col-lg-4 d-flex topper align-items-center">
 							<div class="icon bg-white mr-2 d-flex justify-content-center align-items-center"><span
 									class="icon-paper-plane"></span></div>
-							<span class="text">mohamed@psoriasis-doctor.com</span>
+							<span class="text-primary">psoriasisdoctor@gmail.com</span>
 						</div>
 						<div class="col-lg-4 d-flex topper align-items-center">
 							<div class="icon bg-white mr-2 d-flex justify-content-center align-items-center"><span
 									class="icon-phone2"></span></div>
-							<span class="text">8217365641</span>
+							<span class="text-primary">8217365641</span>
 						</div>
 					</div>
 				</div>
@@ -147,18 +158,10 @@
 						<div class="media-body p-2 mt-3">
 							<h3 class="heading">Specialities</h3>
 							<ul>
-								<strong>Experienced Doctors: </strong>
-								<li>Our doctors have over 5 years of specialized experience in treating psoriasis.</li>
-								<strong>Personalized Care: </strong>
-								<li>We create customized treatment plans tailored to your unique needs.</li>
 								<strong>Expertise in Psoriasis: </strong>
-								<li>Our team deeply understands psoriasis and can address its complexities effectively.
-								</li>
-								<strong>Passionate Support: </strong>
-								<li>We're dedicated to providing exceptional care and guiding you towards healthier
-									skin. </li>
-								<strong>Journey Together: </strong>
-								<li>We're here to support you every step of the way towards better skin health. </li>
+								<li>Our team deeply understands psoriasis and can address its complexities effectively.</li>
+								<strong>Personalized Care: </strong>
+								<li>We're dedicated to providing exceptional care and guiding you towards healthier skin.</li>
 							</ul>
 						</div>
 					</div>
@@ -171,14 +174,8 @@
 						<div class="media-body p-2 mt-3">
 							<h3 class="heading">Psoriasis: A Global Concern </h3>
 							<ul>
-								<li>WHO Comments Highlight Treatment Challenges: No complete cure available;
-									insufficient treatment options and access to care.</li>
-								<li>Diagnosis Delayed: 44% of Patients Visit General Physicians First </li>
-								<li>GBD 2019 records 46,22,594 new cases worldwide. </li>
-								<li>Affects 2-3% of the global population with varying prevalence and cultural
-									perceptions. </li>
-								<li>Annual US cost estimated at $112 billion in 2013. </li>
-								<li>Challenges: Genetic predisposition, Economic burden, Psychological impact </li>
+								<li>GBD 2019 records 46,22,594 new cases worldwide.  </li>
+								<li>WHO Highlights the lack of complete cure and insufficiency in treatment modalities.  </li>
 							</ul>
 						</div>
 					</div>
@@ -189,14 +186,10 @@
 							<span class="flaticon-stethoscope"></span>
 						</div>
 						<div class="media-body p-2 mt-3">
-							<h3 class="heading">Emergency Care</h3>
+							<h3 class="heading">Psoriasis Care</h3>
 							<ul>
-								<strong>Psoriasis Care: </strong>
 								<li>Enter your information below. </li>
-								<li>Within 5 minutes, receive proper guidance and solutions. </li>
-								<li>Alleviate symptoms and find relief. </li>
-								<strong>Dedicated Team Support: </strong>
-								<li>Available around the clock to assist you. </li>
+								<li>Receive proper guidance and solutions within 30 minutes. </li>
 							</ul>
 						</div>
 					</div>
@@ -208,10 +201,7 @@
 						</div>
 						<div class="media-body p-2 mt-3">
 							<h3 class="heading">24 Hours Service</h3>
-							<p>Access our 24/7 support service for patients in need of assistance with psoriasis,
-								ensuring continuous care and guidance.</p>
-							<p>Our website offers 24/7 assistance for patients in need of support managing psoriasis,
-								ensuring continuous care and guidance whenever it's needed</p>
+							<p>Access our 24/7 support service for patients in need of assistance with psoriasis, ensuring continuous care and guidance</p>
 						</div>
 					</div>
 				</div>
@@ -229,7 +219,7 @@
 			<div class="ftco-departments">
 				<div class="row">
 					<div class="col-md-12 nav-link-wrap">
-						<div class="nav nav-pills d-flex text-center" id="v-pills-tab" role="tablist"
+						<div class="nav nav-pills d-flex justify-content-between text-center" id="v-pills-tab" role="tablist"
 							aria-orientation="vertical">
 							<a class="nav-link ftco-animate active" id="v-pills-1-tab" data-toggle="pill"
 								href="#v-pills-1" role="tab" aria-controls="v-pills-1" aria-selected="true">SHODANAM</a>
@@ -436,7 +426,7 @@
 									<span class="quote d-flex align-items-center justify-content-center">
 										<i class="icon-quote-left"></i>
 									</span>
-									<p>Thanks to psoriasis-doctor.com, my skin has improved significantly and I finally
+									<p>Thanks to dr.muzzammel's treatment, my skin has improved significantly and I finally
 										feel confident again!</p>
 								</div>
 							</div>
@@ -447,7 +437,7 @@
 									<span class="quote d-flex align-items-center justify-content-center">
 										<i class="icon-quote-left"></i>
 									</span>
-									<p>Psoriasis-doctor.com's personalized approach helped me find relief and manage my
+									<p>dr.muzzammel's personalized approach helped me find relief and manage my
 										condition effectively.</p>
 								</div>
 							</div>
@@ -458,7 +448,7 @@
 									<span class="quote d-flex align-items-center justify-content-center">
 										<i class="icon-quote-left"></i>
 									</span>
-									<p>Psoriasis-doctor.com not only provided effective treatment but also offered
+									<p>dr.muzzammel's not only provided effective treatment but also offered
 										invaluable emotional support, making my journey easier.</p>
 								</div>
 							</div>
@@ -480,7 +470,7 @@
 									<span class="quote d-flex align-items-center justify-content-center">
 										<i class="icon-quote-left"></i>
 									</span>
-									<p>Psoriasis-doctor.com's holistic approach and compassionate care restored my
+									<p>dr.muzzammel's holistic approach and compassionate care restored my
 										quality of life</p>
 								</div>
 							</div>
@@ -601,6 +591,7 @@
 	<script src="./js/main.js"></script>
 
 	<script>
+		document.querySelector(".alert").style.display = "none";
 		document.getElementById("appointmentbutton").addEventListener("click", (e) => {
 			e.preventDefault();
 			const firstName = document.querySelector("#firstname").value;
@@ -628,7 +619,17 @@
 			fetch("/patient-response", requestOptions)
 				.then((response) => response.text())
 				.then((result) => console.log(result))
-				.catch((error) => console.error(error));
+				.catch((error) => console.error(error))
+				.finally(()=>{
+					document.querySelector("#firstname").value = "";
+					document.querySelector("#lastname").value = "";
+					document.querySelector("#message").value = "";
+					document.querySelector("#number").value = "";
+					document.querySelector(".alert").style.display = "block";
+					setTimeout(()=>{
+						document.querySelector(".alert").style.display = "none";
+					}, 5000);
+				})
 		})
 		document.querySelector(".fa-angle-down").addEventListener("click", () => {
 			document.querySelector(".fa-angle-down").style.display = "none";
